@@ -1,68 +1,71 @@
-
-body {
-    font-family: 'Vazirmatn', sans-serif;
-    background: #f6f0ff; 
-    color: #3d2b57;
-    margin: 0;
-    padding: 0;
-}
-
-
-/* Header */
 .page-header {
-    background: linear-gradient(90deg, #6c3dbf, #9f6dff);
-    padding: 25px 0;
-    margin-bottom: 30px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    background-color: #C25100;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
 }
-.page-header h1 a {
+
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Lobster', cursive;
-    font-size: 42px;
-    color: #fff;
-    text-decoration: none;
-}
-.page-header h1 a:hover {
-    color: #ffe4ff;
 }
 
-/* Posts */
-.post {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 22px;
-    margin-bottom: 25px;
-    border-left: 6px solid #9f6dff;
-    transition: transform .15s ease-in-out;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-}
-.post:hover {
-    transform: translateY(-4px);
-}
-
-/* Title */
-.post h2 a {
-    color: #5b2eaa;
-    text-decoration: none;
-    font-size: 26px;
-}
-.post h2 a:hover {
-    color: #8a55e6;
-}
-
-/* Date */
 .date {
-    font-size: 14px;
-    color: #8466a9;
+    color: #828282;
 }
 
-/* Text */
-.post p {
-    line-height: 1.7;
-    font-size: 17px;
+.save {
+    float: right;
 }
 
-/* Links */
-a {
-    transition: color 0.2s ease;
+.post-form textarea,
+.post-form input {
+    width: 100%;
 }
 
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h2 a,
+.post h2 a:visited {
+    color: #000000;
+}
+
+.post > .date,
+.post > .actions {
+    float: right;
+}
+
+.btn-secondary,
+.btn-secondary:visited {
+    color: #C25100;
+    background: none;
+    border-color: #C25100;
+    margin-left: 15px;
+}
+
+.btn-secondary:hover {
+    color: #FFFFFF;
+    background-color: #C25100;
+}
