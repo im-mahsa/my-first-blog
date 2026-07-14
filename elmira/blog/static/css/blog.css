@@ -1,0 +1,204 @@
+.page-header {
+    background: linear-gradient(90deg, #6c3dbf, #b790ff);
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+    text-align: left; /* تضمین چپ‌چین بودن هدر */
+}
+.page-header h1 a:hover {
+    color: #ffe4ff;
+}
+
+
+h1 {
+    font-family: 'Lobster', cursive;
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: left; /* تغییر از right به left برای راست‌چین شدن */
+}
+
+.post-form textarea,
+.post-form input {
+    width: 100%;
+}
+
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+    color: #ffffff;
+    float: right; /* تغییر از right به left برای راست‌چین شدن */
+    font-size: 26pt;
+    margin-left: 20px; /* تغییر از margin-right به margin-left */
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: #f6f0ff; 
+    color: #3d2b57;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* راست‌چین کردن کل بدنه */
+    text-align: right; /* راست‌چین کردن متن‌ها */
+}
+
+/* Posts */
+.post {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 25px;
+    border-left: none; /* حذف border-left */
+    border-right: 6px solid #9f6dff; /* اضافه کردن border-right */
+    transition: transform .15s ease-in-out;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+.post:hover {
+    transform: translateY(-4px);
+}
+
+/* Title */
+.post h2 a {
+    color: #5b2eaa;
+    text-decoration: none;
+    font-size: 26px;
+}
+.post h2 a:hover {
+    color: #8a55e6;
+}
+
+.post > .date,
+.post > .actions {
+    float: left; /* تغییر از right به left برای راست‌چین شدن */
+}
+
+.btn-secondary,
+.btn-secondary:visited {
+    color: #9f6dff;
+    background: none;
+    border-color: #9f6dff;
+    margin-right: 15px; /* تغییر از margin-left به margin-right */
+    margin-left: 0; /* حذف margin-left */
+}
+
+.btn-secondary:hover {
+    color: #FFFFFF;
+    background-color: #9f6dff;
+}
+/* ====== Form Wrapper ====== */
+.post-form {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(106, 17, 203, 0.15);
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+/* ====== Form Title ====== */
+.post-form h2 {
+    color: #6a11cb;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* ====== Paragraph wrapper (form.as_p) ====== */
+.post-form p {
+    margin-bottom: 20px;
+}
+
+/* ====== Labels ====== */
+.post-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #4a4a4a;
+}
+
+/* ====== Inputs & Textarea ====== */
+.post-form input[type="text"],
+.post-form input[type="email"],
+.post-form input[type="password"],
+.post-form textarea,
+.post-form select {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 14px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: all 0.25s ease;
+    background-color: #faf8ff;
+}
+
+/* ====== Focus Effect ====== */
+.post-form input:focus,
+.post-form textarea:focus,
+.post-form select:focus {
+    border-color: #8e2de2;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(142, 45, 226, 0.15);
+    outline: none;
+}
+
+/* ====== Textarea ====== */
+.post-form textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+/* ====== Submit Button ====== */
+.post-form .save {
+    background: linear-gradient(135deg, #6a11cb, #8e2de2);
+    color: #ffffff;
+    .post-form .save {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 40px;
+}
+
+}
+
+/* ====== Button Hover ====== */
+.post-form .save:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(106, 17, 203, 0.3);
+    background: linear-gradient(135deg, #5b0fb8, #7b23cc);
+}
+
+/* ====== Error Messages ====== */
+.post-form .errorlist {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
+    color: #c62828;
+    font-size: 0.9rem;
+}
+
+/* ====== Help Text ====== */
+.post-form .helptext {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+    .post-form {
+        padding: 25px;
+    }
+}
